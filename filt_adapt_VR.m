@@ -68,7 +68,6 @@ for countN = 1:N
     
     E(countN,:) = D(countN,:) - Y(countN,:); % compute residual E
     
-    %W = W + mu*E(countN,:).*x;     
     W = W + mu*x*E(countN,:);       % update coefficients 
     
 end
